@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+
  @layer components {
   .section-title {
     @apply text-3xl font-bold mb-4;
@@ -25,6 +27,36 @@
   --color-
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
-  /* ... */
+  
+  
+  --font-bville: "Baskervville", serif;
+  --font-optical-sizing: auto;
+  --font-weight: <weight>;
+  --font-style: normal;
+    /* ... */
 }
+
+.darkmode {
+background: hsla(276, 19%, 15%, 1);
+
+background: linear-gradient(135deg, hsla(276, 19%, 15%, 1) 50%, hsla(20, 3%, 21%, 1) 50%);
+
+background: -moz-linear-gradient(135deg, hsla(276, 19%, 15%, 1) 50%, hsla(20, 3%, 21%, 1) 50%);
+
+background: -webkit-linear-gradient(135deg, hsla(276, 19%, 15%, 1) 50%, hsla(20, 3%, 21%, 1) 50%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#281F2E", endColorstr="#373534", GradientType=1 );
+
+  color: white;
+}
+.light{
+background: #ffa8aa;
+
+background: linear-gradient(135deg, hsla(359, 100%, 83%, 1) 50%, #fff9f5 50%);
+
+background: -moz-linear-gradient(135deg, hsla(359, 100%, 83%, 1) 50%, hsla(25, 100%, 98%, 1) 50%);
+
+background: -webkit-linear-gradient(135deg, hsla(359, 100%, 83%, 1) 50%, hsla(25, 100%, 98%, 1) 50%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA9AA", endColorstr="#FFF8F3", GradientType=1 );}
 }

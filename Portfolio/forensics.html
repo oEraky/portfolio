@@ -1,106 +1,160 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/output.css" rel="stylesheet">
-  <title>Omar Eraky | Portfolio</title>
+  <title>ForensicsXR Teacher’s App | Omar Eraky</title>
 </head>
-<body class="font-body  bg-radial-[at_0%_0%] from-rose-100 via-white-300 via-50% to-gray-100 to-90% text-gray-900 bg-no-repeat bg-cover bg-fixed "> 
-<nav>
-<header class=" ">
-  <nav class="b">
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-6">
-      <p class="text-2xl font-bold font-mono">Omar Eraky</p>
-<div>
-      <ul class="flex gap-6 text-lg font-mono">
-        <li><a class="hover:text-brand" href="index.html">Home</a></li>
-        <li><a class="hover:text-brand" href="cases.html">Projects</a></li>
-        <li><a class="hover:text-brand" href="about.html">About Me</a></li>
-     
+
+<body class="font-body font-mono  light  text-gray-900 bg-no-repeat bg-cover bg-fixed "> 
+
+  <!-- NAV -->
+  <header>
+    <nav>
+      <div class="max-w-7xl mx-auto flex items-center justify-between p-6">
+        <p class="text-2xl font-bold">Omar Eraky</p>
+        <div class="backdrop-blur-2xl">
+        <ul class="flex gap-6 text-lg">
+          <li><a class="hover:text-brand" href="index.html">Home</a></li>
+          <li><a class="hover:text-brand" href="cases.html">Projects</a></li>
+          <li><a class="hover:text-brand" href="about.html">About Me</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="content-wrapper max-w-4xl mx-auto py-12 px-6">
+
+    <!-- HERO IMAGE -->
+    <img
+      src="Users_Home.png"
+      alt="ForensicsXR Teacher App Home"
+      class="object-contain mb-8"
+    >
+
+    <h1 class="text-4xl font-bold mb-6">
+      Evaluating Forensics Professors' Needs with the ForensicsXR Teacher's App
+    </h1>
+
+    <!-- META -->
+    <ul class="mb-12 space-y-1">
+      <li><b>Role:</b> UI/UX + Web Developer</li>
+      <li><b>Tools:</b> Unity, JavaScript, HTML, CSS</li>
+      <li><b>Team:</b> 1 design researcher, 2 developers, 1 forensic expert</li>
+    </ul>
+
+    <!-- PROBLEM -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">The Problem</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Teachers need a way to evaluate students.</li>
+        <li>
+          Teachers need to see the work their students are doing in a way that makes sense.
+          Math is great, but how do we translate data points into real items?
+        </li>
+        <li>
+          Teachers need to be able to generate their own crime scenes for students to explore.
+        </li>
       </ul>
+    </section>
+
+    <!-- TECH -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Technical Implementation</h2>
+      <p class="mb-4">
+        I used my technical knowledge of JavaScript, HTML, and CSS, connecting my background
+        as a developer with my design-oriented mind.
+      </p>
+
+      <ul class="list-disc list-inside space-y-2">
+        <li>
+          Use user cards on the homepage to give an easy idea of who each student is, with
+          user IDs for privacy.
+        </li>
+        <li>
+          Allow instructors to see the images students took, including date and time, to
+          understand the story being told.
+        </li>
+        <li>
+          Create a heatmap showing time spent at VR points with intensifying colors.
+        </li>
+        <li>
+          Build a drag-and-drop system for professors to generate their own crime scenes
+          without technical complexity.
+        </li>
+      </ul>
+    </section>
+
+    <img src="VRSetup_Bloodstains.png" class="mb-12" alt="VR crime scene setup">
+
+    <!-- USER RESEARCH -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">User Research</h2>
+      <p class="mb-4">
+        Aside from developing the systems mentioned above, I also played a significant role
+        in user research and understanding.
+      </p>
+
+      <ul class="list-disc list-inside space-y-2">
+        <li>
+          Led post-experiment survey sessions in a class of 60 students to enhance the VR application.
+        </li>
+        <li>
+          Conducted one-on-one interviews with participating students.
+        </li>
+        <li>
+          Used qualitative coding to identify three major pain points:
+          navigation, controller feedback, and visual design.
+        </li>
+      </ul>
+    </section>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      <img src="Users_Modifying.png" alt="Users modifying scenes">
+      <img src="OutputScreen_UserLog.png" alt="User activity logs">
     </div>
-  </nav>
-</header>
 
-<main class="content-wrapper py-12 font-mono ">
-  <img class="object-contain h-200 w-225" src="Users_Home.png">
- <h1 class="text-4xl font-bold">Evaluating Forensics Professors' Needs with the ForensicsXR Teacher's App</h1>
-<br>
- <ul>
- <li>Role: UI/UX + Web Developer</li>
-<li>Tools: Unity, JavaScript, HTML, CSS</li>
-<li>Team: 1 design researcher, 2 developers, 1 forensic expert</li>
-</ul>
-<div>
-<br> 
-<h2 class="text-2xl font-bold">The Problem</h2>
-<p>
-<br>
-• Teachers need a way to evaluate students.<br>
-• Teachers need to see the work their students are doing in a way that makes sense. Math is great, but how do we translate data points into real items?<br>
-• Teachers need to be able to generate their own crime scenes for students to explore. 
-<br><br>
-<br>
+    <!-- OUTCOMES -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Our Outcomes</h2>
+      <p class="mb-4">
+        The VR application's supporter rate increased by <b>30%</b> after our subsequent experiments.
+      </p>
 
+      <ul class="list-disc list-inside space-y-2">
+        <li>
+          Increased instructor understanding of student activities.
+        </li>
+        <li>
+          Reduced student data upload time from <b>15 minutes</b> to <b>1 minute</b>.
+        </li>
+        <li>
+          Secured additional funding due to the findings.
+        </li>
+      </ul>
+    </section>
 
-<h2 class="text-2xl font-bold">Technical Implementation</h2>
-<br>
-<p>
-I used my technical knowledge of Javascript, HTML and CSS here, connecting my background as a developer with my design oriented mind.
-<br><br>
-• Use user cards on the homepage to give an easy idea of who each student is, with user IDs for privacy.<br>
-• Allow the instructor to see the images their students took, with the date and time the images were taken; that way the professor can see the story their students are telling.<br>
-• Create a heatmap that showed the students time spent in each VR point with intensifiying colors, to show consistent movement through the scene!<br>
-• Make a function for professors to generate their own crime scenes with simple, drag and drop functionality. All of the functionality, without them needing to worry about too much technical understanding.<br><br>
-</p>
-<br>
-<img src="VRSetup_Bloodstains.png" class="w-100 md:w-150 lg:w-250">
-<br>
-<h2 class="text-2xl font-bold">User Research</h2>
-<p>
-  <br>
-Aside from developing the systems mentioned above, I also played a significant role in user research and understanding.
-    <br><br>
-• I led the post experiment survey sessions in a class of 60 students to enhance the VR application.<br>
-• I ran one on one interviews with each student who participated to evaluate their needs with the VR application. <br>
-• I used qualitative coding to analyze the three major pain points of the VR App: navigation, controller feedback, and visual design.<br>
+    <img src="OutputScreen_UserImages.png" class="mb-16" alt="User image outputs">
 
-<br>
-<img src="Users_Modifying.png" class="w-100 md:w-150 lg:w-250"></img> 
-<br>
-<img src="OutputScreen_UserLog.png" class="w-100 md:w-150 lg:w-250"></img>
- 
-<br>
+    <!-- LEARNINGS -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">What I Learned</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><b>Do more research.</b> I underestimated early domain knowledge.</li>
+        <li><b>Be timely.</b> Managing workload required better time discipline.</li>
+        <li><b>Be confident.</b> The best work happens when you trust your ability.</li>
+      </ul>
+    </section>
 
-<h2 class="text-2xl font-bold">Our Outcomes</h2>
-<br>
-<p>
- The VR application's supporter rate increased by <b>30%</b> after our subsequent experiments.
-<br>
-• The Teacher's app showed an increase in instructor understanding of student activities.<br>
-• I made further developments that halved the time it took to upload student information. Before data entry was manual, so it took about <b>15 minutes to upload data</b>, with the changes I made, that was shortened to <b>just 1 minute.</b><br>
-• We were able to secure more funding because of the findings I made!<br>
-<br><br>
-<img src="OutputScreen_UserImages.png" class="w-100 md:w-150 lg:w-250">
-<br>
+  </main>
 
-
-<h2 class="text-2xl font-bold">What I Learned</h2>
-<br>
-<p>
-• <b>Do more research.</b> There were many components I did not understand about the project that I should have researched prior.<br>
-• <b>Be timely.</b> To keep up with the intensive workload without burning out, I learned to be more timely.<br>
-• <b>Be confident.</b> This project left little room for anxiety, the best work comes when you believe you are good enough to do it.<br>
-</p>
-
-</div>
-</div>
-</main>
+  <!-- FOOTER -->
   <footer class="border-t mt-12 py-6 text-center text-gray-600 font-mono">
-   Developed by Omar Eraky © 2025
+    Developed by Omar Eraky © 2025
+  </footer>
 
-</footer>
 </body>
-    
-      
+</html>
