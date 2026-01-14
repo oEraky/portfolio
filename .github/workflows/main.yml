@@ -19,5 +19,5 @@ jobs:
           username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
           port: 22
-          source: "."
-          target: "/var/www/eraky.dev/html"
+          script: |
+      rsync -avz --delete ./ /var/www/eraky.dev/html/
