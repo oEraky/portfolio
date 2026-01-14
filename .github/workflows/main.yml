@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Copy files to server
+      - name: Copy files to server safely
         uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.DROPLET_IP }}
@@ -20,4 +20,17 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           port: 22
           script: |
-            rsync -avz --delete ./ /var/www/eraky.dev/html/
+            # Backup the existing site if it exists
+            if [ -d /var/www/eraky.dev/html ]; then
+              echo "Backing up current site..."
+              mv /var/www/eraky.dev/html /var/www/eraky.dev/html_backup_$(date +%F_%H-%M)
+            fi
+
+            # Recreate the live folder
+            mkdir -p /var/www/eraky.dev/html
+
+            # Deploy files safely (no --delete, just copy)
+            echo "Deploying files..."
+            rsync -avz ./ /var/www/eraky.dev/html/
+
+            echo "Deployment complete!"
