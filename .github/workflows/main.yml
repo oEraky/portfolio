@@ -20,4 +20,4 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           port: 22
           script: |
-      rsync -avz --delete ./ /var/www/eraky.dev/html/
+            rsync -avz --delete ./ /var/www/eraky.dev/html/
